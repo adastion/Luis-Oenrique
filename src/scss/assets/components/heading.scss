@@ -1,0 +1,23 @@
+.heading {
+  text-transform: uppercase;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: $base-headings-color;
+  }
+
+  &--footer {
+    color: $cornflowers_blue;
+
+    &::before {
+      background: $cornflowers_blue;
+    }
+  }
+}
