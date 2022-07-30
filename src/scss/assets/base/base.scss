@@ -1,0 +1,56 @@
+html {
+  @include primary-copy-font;
+  color: $base-text-color;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: normal;
+  height: 100%;
+}
+
+.container {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.content {
+  padding: 30px 100px;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+a,
+button {
+  color: $base-link-color;
+  transition: background 0.3s;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $base-headings-color;
+  line-height: normal;
+}
+
+h1 {
+  font-size: 5.625rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2.875rem;
+  font-weight: 700;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}

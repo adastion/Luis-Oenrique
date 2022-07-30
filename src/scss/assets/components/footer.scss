@@ -1,0 +1,62 @@
+.footer {
+  min-height: 780px;
+  background: url('../images/bg_footer.jpg') no-repeat center / cover;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: $black;
+    opacity: 0.6;
+  }
+
+  &__content {
+  }
+
+  &__btn {
+    height: 50px;
+    
+  }
+
+  &__copyright-wrap {
+  }
+
+  &__copyright {
+  }
+}
+
+.feedback {
+  min-width: 770px;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+    & textarea {
+      min-height: 206px;
+      padding: 10px;
+      resize: none;
+    }
+    
+    & input {
+      width: 100%;
+      height: 60px;
+      padding: 10px;
+    }
+  }
+  
+  &__inner-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+}
+.btn {
+}
+.social {
+  &__list {
+  }
+}

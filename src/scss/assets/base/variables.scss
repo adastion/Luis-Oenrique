@@ -1,0 +1,39 @@
+// Colors
+// Color names - http://chir.ag/projects/name-that-color/
+
+$black: #000000;
+$slate_gray: rgba(#000000, 0.5);
+$white: #ffffff;
+$science_blue: #0077e2;
+
+$tundora: #4d4d4d;
+$alto: #dedede;
+$mercury: #e2e2e2;
+$mine_shaft: #212121;
+$bondi_blue: #0084b4;
+$wild_sand: #f6f6f6;
+
+
+// Body
+$base-text-color: $tundora;
+$secondary-text-color: $white;
+
+// Headings
+$base-headings-color: $tundora;
+
+// Links
+$base-link-color: $tundora;
+$hover-link-color: $tundora;
+
+// Buttons
+$base-btn-text-color: $white;
+$base-btn-background-color: $science_blue;
+$hover-btn-text-color: $white;
+$hover-btn-background-color: $science_blue;
+
+// Forms
+$field-text-color: $black;
+$field-placeholder-color: $slate_gray;
+// $field-border-color-focus: $sepia;
+$field-border-color: $black;
+$field-background-color: transparent;

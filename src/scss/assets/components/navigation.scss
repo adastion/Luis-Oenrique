@@ -1,0 +1,26 @@
+.navigation {
+  font-weight: 500;
+
+  &__list {
+    display: flex;
+    gap: 15px 38px;
+  }
+
+  &__link {
+    padding-bottom: 5px;
+    text-transform: uppercase;
+
+    &:hover {
+			border-bottom: 2px solid $tundora;
+    }
+
+		&:active {
+			border-bottom: none;
+		}
+		
+		&--active {
+			text-transform: none;
+			border-bottom: 2px solid $tundora;
+		}
+  }
+}

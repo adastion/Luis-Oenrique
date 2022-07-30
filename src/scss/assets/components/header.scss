@@ -1,0 +1,57 @@
+.header {
+  min-height: 800px;
+  background: url('../images/face_img_face.png') bottom -20px right 60px / 80% no-repeat,
+    repeating-linear-gradient(292deg, $mercury, $mercury 200px, $alto 200px, $alto 500px);
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__main-message {
+    margin-top: 180px;
+  }
+
+  &__title {
+    margin-left: -6px;
+    min-width: 550px;
+  }
+
+  &__subtitle {
+    font-size: 22px;
+    font-weight: 600;
+    opacity: 0.6;
+    margin-bottom: 30px;
+  }
+
+  &__buttons-wrap {
+    display: flex;
+    gap: 15px 20px;
+    min-width: 340px;
+  }
+
+  &__btn {
+    width: 160px;
+  }
+
+  &__logo-wrap {
+    @include secondary-copy-font;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__logo {
+    width: 24px;
+    height: 24px;
+    font-weight: 500;
+  }
+
+  &__logo-text {
+    font-size: 14.15px;
+  }
+
+  &__logo-subtext {
+    font-size: 3.54px;
+  }
+}
