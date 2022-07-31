@@ -1,0 +1,44 @@
+.social {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+
+  &__list {
+    display: flex;
+    gap: 8px;
+
+    & li a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 27px;
+      height: 27px;
+      background: $white;
+      font-weight: 700;
+
+      &:hover {
+        background: $bondi_blue;
+        color: white;
+
+        & > .social__icon {
+          fill: $white;
+        }
+      }
+
+      &:active {
+        background: $alto;
+      }
+    }
+  }
+  &__icon {
+    fill: $tundora;
+    margin: 7px;
+    height: inherit;
+
+    &--g-plus {
+      margin: 3px;
+    }
+  }
+
+}

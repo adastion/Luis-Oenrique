@@ -228,7 +228,7 @@ function watcher() {
   gulp.watch(path.watch.fonts, fonts);
 }
 
-const mainTasks = gulp.parallel(html, scss, js, images, fonts);
+const mainTasks = gulp.parallel(html, scss, js, images, fonts, svgSpriteBuild);
 const sprite = gulp.series(svgSpriteBuild);
 
 // Построение сценариев выполнение задач
