@@ -3,6 +3,10 @@
   background: url('../images/face_img_face.png') bottom -20px right 60px / 80% no-repeat,
     repeating-linear-gradient(292deg, $mercury, $mercury 200px, $alto 200px, $alto 500px);
 
+  &__content {
+    padding-top: 30px;
+  }
+
   &__block {
     display: flex;
     justify-content: space-between;

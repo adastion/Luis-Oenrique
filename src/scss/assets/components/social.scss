@@ -25,12 +25,17 @@
           fill: $white;
         }
       }
-
+      
       &:active {
         background: $alto;
+
+        & > .social__icon {
+          fill: $tundora;
+        }
       }
     }
   }
+
   &__icon {
     fill: $tundora;
     margin: 7px;
@@ -40,5 +45,4 @@
       margin: 3px;
     }
   }
-
 }

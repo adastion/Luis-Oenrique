@@ -1,6 +1,8 @@
 .heading {
   text-transform: uppercase;
   position: relative;
+  opacity: 0.7;
+  text-align: center;
 
   &::before {
     content: '';
@@ -15,6 +17,7 @@
 
   &--footer {
     color: $cornflowers_blue;
+    opacity: 1;
 
     &::before {
       background: $cornflowers_blue;

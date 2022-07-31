@@ -1,0 +1,42 @@
+.about-me {
+  &__content {
+    padding-top: 110px;
+    padding-bottom: 110px;
+    display: flex;
+    align-items: center;
+    gap: 10px 70px;
+  }
+
+  &__block {
+    width: 50%;
+  }
+
+  &__btn {
+    padding: 15px 45px;
+    margin-top: 30px;
+  }
+
+  &__title {
+    max-width: 320px;
+    text-align: start;
+
+    &::before {
+      left: 0;
+      transform: translateX(0);
+    }
+  }
+
+  &__text {
+    max-width: 470px;
+  }
+
+  &__pic {
+    max-width: 570px;
+    background: $tundora;
+
+    & img {
+      aspect-ratio: 1/0.778;
+      object-fit: cover;
+    }
+  }
+}
