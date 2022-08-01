@@ -1,0 +1,11 @@
+.skills {
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__chart {
+    & img {
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.portfolio {
+  background: $wild_sand;
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+
+    & li {
+      max-width: 368px;
+      width: 100%;
+      min-height: 318px;
+
+      &:hover {
+        box-shadow: 1px -3px 18px 11px rgb(0 0 0 / 10%);
+      }
+    }
+
+    & img {
+      width: 100%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }
+  }
+
+  &__link {
+  }
+
+  & button {
+    padding: 20px 46px;
+    margin: 0 auto;
+  }
+}

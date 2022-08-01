@@ -8,6 +8,7 @@
   outline: 1px solid $black;
   transition: ease background 0.3s;
   text-transform: uppercase;
+  display: block;
 
   &:hover {
     outline: none;
@@ -23,6 +24,7 @@
     background: $white;
     box-shadow: 0 10px 18px 8px rgba($black, 0.1);
     transition: ease box-shadow 0.3s;
+    outline: none;
 
     &:hover {
       background: darken($white, 10%);
