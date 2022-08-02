@@ -2,7 +2,6 @@
   background: $wild_sand;
 
   &__title {
-    margin-bottom: 60px;
   }
 
   &__list {
@@ -18,7 +17,11 @@
       min-height: 318px;
 
       &:hover {
-        box-shadow: 1px -3px 18px 11px rgb(0 0 0 / 10%);
+        box-shadow: 1px 0px 18px 14px rgb(0 0 0 / 10%);
+      }
+
+      &:active {
+        
       }
     }
 
@@ -27,9 +30,6 @@
       aspect-ratio: 1/1;
       object-fit: cover;
     }
-  }
-
-  &__link {
   }
 
   & button {
