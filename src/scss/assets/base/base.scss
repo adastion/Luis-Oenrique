@@ -7,20 +7,6 @@ html {
   height: 100%;
 }
 
-.container {
-  max-width: 1366px;
-  margin: 0 auto;
-  
-}
-
-.content {
-  padding: 145px 100px 135px;
-  max-width: 100%;
-  width: 100%;
-  position: relative;
-  z-index: 10;
-}
-
 a,
 button {
   color: $base-link-color;

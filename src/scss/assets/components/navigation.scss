@@ -3,7 +3,12 @@
 
   &__list {
     display: flex;
+    flex-direction: column;
     gap: 15px 38px;
+
+    @include tablet-and-bigger {
+      flex-direction: row;
+    }
   }
 
   &__link {

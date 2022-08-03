@@ -15,31 +15,6 @@
     padding-bottom: 0;
   }
 
-  &__button-fixed {
-    height: 50px;
-    position: absolute;
-    right: 30px;
-    bottom: 192px;
-    z-index: 20;
-
-    & a {
-      position: relative;
-      width: 45px;
-      height: 41px;
-
-      &::before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 20px;
-        height: 20px;
-        background: url('../images/svg/up-arrow.svg') center / cover no-repeat;
-      }
-    }
-  }
-
   &__copyright-wrap {
     display: flex;
     justify-content: center;

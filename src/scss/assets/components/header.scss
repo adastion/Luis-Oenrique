@@ -1,7 +1,12 @@
 .header {
   min-height: 800px;
-  background: url('../images/face_img_face.png') bottom -20px right 60px / 80% no-repeat,
+  background: url('../images/face_img_face.png') bottom 0 right 10px / 150% no-repeat,
     repeating-linear-gradient(292deg, $mercury, $mercury 200px, $alto 200px, $alto 500px);
+
+  @include tablet-and-bigger {
+    background: url('../images/face_img_face.png') bottom -20px right 60px / 80% no-repeat,
+      repeating-linear-gradient(292deg, $mercury, $mercury 200px, $alto 200px, $alto 500px);
+  }
 
   &__content {
     padding-top: 30px;
@@ -10,16 +15,34 @@
   &__block {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+
+    @include tablet-and-bigger {
+      align-items: center;
+    }
   }
 
   &__main-message {
     margin-top: 180px;
+    text-align: center;
+
+    @include phone-and-bigger {
+      text-align: start;
+    }
   }
 
   &__title {
     margin-left: -6px;
-    min-width: 550px;
+    font-size: 50px;
+
+    @include phone-and-bigger {
+      font-size: 70px;
+    }
+
+    @include tablet-and-bigger {
+      min-width: 550px;
+      font-size: 90px;
+    }
   }
 
   &__subtitle {
@@ -31,8 +54,14 @@
 
   &__buttons-wrap {
     display: flex;
+    align-items: center;
+    flex-direction: column;
     gap: 15px 20px;
-    min-width: 340px;
+
+    @include phone-and-bigger {
+      flex-direction: row;
+      min-width: 340px;
+    }
   }
 
   &__btn {

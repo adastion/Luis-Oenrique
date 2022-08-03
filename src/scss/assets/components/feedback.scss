@@ -1,5 +1,9 @@
 .feedback {
-  padding: 0 200px 58px;
+  padding: 0 0 58px;
+  
+  @include big-desktop-and-bigger {
+    padding: 0 200px 58px;
+  }
 
   &__form {
     display: flex;

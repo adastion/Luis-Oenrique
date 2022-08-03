@@ -1,0 +1,12 @@
+.content {
+  padding: 145px 25px 135px;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  
+  @include tablet-and-bigger {
+    padding: 145px 100px 135px;
+    
+  }
+}

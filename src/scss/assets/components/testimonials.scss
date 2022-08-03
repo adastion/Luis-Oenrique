@@ -16,6 +16,16 @@
   &__card-inner {
     display: flex;
     margin-bottom: 50px;
+    max-height: 160px;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    display: none;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
   }
 
   &__avatar {
@@ -31,6 +41,8 @@
   }
 
   &__about {
+    text-transform: uppercase;
+    max-height: 100%;
   }
 
   &__name {
@@ -41,14 +53,13 @@
   &__specialty {
     font-style: italic;
     font-size: 12px;
-    text-transform: uppercase;
   }
 
   &__text {
     opacity: 0.6;
-    max-width: 570px;
+    max-width: 538px;
     line-height: 26px;
-    margin-top: 26px;
+    margin-top: 10px;
   }
 
   &__list-buttns {
@@ -72,9 +83,9 @@
 
   &__list-funfacts {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 30px 156px;
 
     & li {
       text-align: center;
@@ -105,8 +116,14 @@
   }
 }
 
-#bt1:checked ~ .testimonials__content .testimonials__card label[for='bt1'],
-#bt2:checked ~ .testimonials__content .testimonials__card label[for='bt2'],
-#bt3:checked ~ .testimonials__content .testimonials__card label[for='bt3'] {
+#bt1:checked ~ .testimonials__list-buttns label[for='bt1'],
+#bt2:checked ~ .testimonials__list-buttns label[for='bt2'],
+#bt3:checked ~ .testimonials__list-buttns label[for='bt3'] {
   background: $black;
+}
+
+#bt1:checked ~ #slide1,
+#bt2:checked ~ #slide2,
+#bt3:checked ~ #slide3 {
+  display: flex;
 }
