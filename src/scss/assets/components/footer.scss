@@ -17,10 +17,17 @@
 
   &__copyright-wrap {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 30px;
     border-top: 1px solid $white;
     padding: 30px 0;
     position: relative;
+
+    @include big-tablet-and-bigger {
+      flex-direction: row;
+    }
   }
 
   &__copyright {

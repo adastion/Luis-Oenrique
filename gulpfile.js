@@ -66,7 +66,6 @@ const server = () => {
     server: {
       baseDir: `${path.build.html}`,
     },
-    port: 3000,
   });
 };
 
@@ -156,30 +155,32 @@ const js = () => {
 };
 
 const images = () => {
-  return gulp
-    .src(path.src.images)
-    .pipe(
-      plumber(
-        notify.onError({
-          title: 'IMAGES',
-          message: 'Error: <%= error.message %>',
-        }),
-      ),
-    )
-    // .pipe(newer(path.build.images))
-    // .pipe(webp())
-    // .pipe(gulp.dest(path.build.images))
-    // .pipe(gulp.src(path.src.images))
-    // .pipe(newer(path.build.images))
-    // .pipe(
-    //   imagemin({
-    //     progressive: false,
-    //     interlaced: false,
-    //     optimizationLevel: 3, // 0 to 7
-    //   }),
-    // )
-    .pipe(gulp.dest(path.build.images))
-    .pipe(browsersync.stream());
+  return (
+    gulp
+      .src(path.src.images)
+      .pipe(
+        plumber(
+          notify.onError({
+            title: 'IMAGES',
+            message: 'Error: <%= error.message %>',
+          }),
+        ),
+      )
+      // .pipe(newer(path.build.images))
+      // .pipe(webp())
+      // .pipe(gulp.dest(path.build.images))
+      // .pipe(gulp.src(path.src.images))
+      // .pipe(newer(path.build.images))
+      // .pipe(
+      //   imagemin({
+      //     progressive: false,
+      //     interlaced: false,
+      //     optimizationLevel: 3, // 0 to 7
+      //   }),
+      // )
+      .pipe(gulp.dest(path.build.images))
+      .pipe(browsersync.stream())
+  );
 };
 
 const fonts = () => {
@@ -218,7 +219,7 @@ const svgSpriteBuild = () => {
       }),
     )
     .pipe(gulp.dest('src/images/'));
-}
+};
 
 function watcher() {
   gulp.watch(path.watch.html, html);
@@ -234,7 +235,7 @@ const sprite = gulp.series(svgSpriteBuild);
 // Построение сценариев выполнение задач
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
 
-export {sprite};
+export { sprite };
 
 // Выполнение сценария
 gulp.task('default', dev);

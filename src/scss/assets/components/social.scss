@@ -1,8 +1,11 @@
 .social {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
+  
+  @include big-tablet-and-bigger {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
 
   &__list {
     display: flex;
