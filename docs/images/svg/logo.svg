@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14.46mm" height="14.46mm" viewBox="0 0 41 41">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #000;
+        stroke-linejoin: round;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <circle class="cls-1" cx="20.5" cy="20.5" r="20"/>
+    </clipPath>
+  </defs>
+  <g id="Слой_2" data-name="Слой 2">
+    <g id="Layer_1" data-name="Layer 1">
+      <g>
+        <circle class="cls-2" cx="20.5" cy="20.5" r="20"/>
+        <g class="cls-3">
+          <line class="cls-2" x1="20.5" y1="40.5" x2="20.5" y2="0.5"/>
+          <line class="cls-2" x1="15.5" y1="40.5" x2="15.5" y2="0.5"/>
+          <line class="cls-2" x1="10.5" y1="40.5" x2="10.5" y2="0.5"/>
+          <line class="cls-2" x1="5.5" y1="40.5" x2="5.5" y2="0.5"/>
+          <line class="cls-2" x1="20.5" y1="35.5" x2="40.5" y2="35.5"/>
+          <line class="cls-2" x1="20.5" y1="30.5" x2="40.5" y2="30.5"/>
+          <line class="cls-2" x1="20.5" y1="25.5" x2="40.5" y2="25.5"/>
+          <line class="cls-2" x1="20.5" y1="20.5" x2="40.5" y2="20.5"/>
+          <line class="cls-2" x1="20.5" y1="15.5" x2="40.5" y2="15.5"/>
+          <line class="cls-2" x1="20.5" y1="10.5" x2="40.5" y2="10.5"/>
+          <line class="cls-2" x1="20.5" y1="5.5" x2="40.5" y2="5.5"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
