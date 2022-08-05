@@ -181,9 +181,15 @@ p {
 .container__button-fixed {
   height: 50px;
   position: fixed;
-  right: 120px;
-  bottom: 160px;
+  right: 10px;
+  bottom: 60px;
   z-index: 20;
+}
+@media (min-width: 1024px) {
+  .container__button-fixed {
+    right: 120px;
+    bottom: 160px;
+  }
 }
 .container__button-fixed a {
   position: relative;
@@ -404,6 +410,12 @@ p {
   opacity: 0.7;
   text-align: center;
   margin-bottom: 60px;
+  font-size: 36px;
+}
+@media (min-width: 544px) {
+  .heading {
+    font-size: 46px;
+  }
 }
 .heading::before {
   content: "";
@@ -712,12 +724,17 @@ p {
           flex-direction: column;
   border: 1px solid #000000;
   margin: 0 auto;
-  padding: 30px 25px;
+  max-width: 956px;
+  padding: 50px 25px 20px;
 }
 @media (min-width: 768px) {
   .testimonials__card {
+    padding: 80px 30px 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .testimonials__card {
     padding: 80px 110px 30px;
-    max-width: 956px;
   }
 }
 .testimonials__card-inner {
@@ -732,18 +749,18 @@ p {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 50px;
+  max-height: 467px;
   display: none;
 }
 @media (min-width: 768px) {
   .testimonials__card-inner {
-    max-height: 167px;
-    overflow: auto;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  .testimonials__card-inner::-webkit-scrollbar {
-    width: 0;
-    height: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 .testimonials__avatar {
@@ -767,6 +784,19 @@ p {
   text-transform: uppercase;
   max-height: 100%;
   text-align: center;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.testimonials__about::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+@media (min-width: 768px) {
+  .testimonials__about {
+    text-align: start;
+    max-height: 167px;
+  }
 }
 .testimonials__name {
   font-size: 30px;
