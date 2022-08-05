@@ -836,7 +836,12 @@ p {
 }
 .testimonials__funfacts {
   background: #f6f6f6;
-  padding: 70px 135px;
+  padding: 65px 25px;
+}
+@media (min-width: 768px) {
+  .testimonials__funfacts {
+    padding: 70px 135px;
+  }
 }
 .testimonials__list-funfacts {
   display: -webkit-box;
