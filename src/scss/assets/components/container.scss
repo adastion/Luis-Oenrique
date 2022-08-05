@@ -6,9 +6,14 @@
   &__button-fixed {
     height: 50px;
     position: fixed;
-    right: 120px;
-    bottom: 160px;
+    right: 10px;
+    bottom: 60px;
     z-index: 20;
+
+    @include desktop-and-bigger {
+      right: 120px;
+      bottom: 160px;
+    }
 
     & a {
       position: relative;

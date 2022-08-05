@@ -4,6 +4,11 @@
   opacity: 0.7;
   text-align: center;
   margin-bottom: 60px;
+  font-size: 36px;
+
+  @include phone-and-bigger {
+    font-size: 46px;
+  }
 
   &::before {
     content: '';
