@@ -8,17 +8,25 @@
     position: fixed;
     right: 10px;
     bottom: 60px;
-    z-index: 20;
+    z-index: 100;
+    opacity: 0;
+    transition: 0.3s;
+
+    &--active {
+      opacity: 1;
+      transition: 0.3s;
+    }
 
     @include desktop-and-bigger {
       right: 120px;
       bottom: 160px;
     }
 
-    & a {
+    & button {
       position: relative;
       width: 45px;
       height: 41px;
+      padding: 0;
 
       &::before {
         content: '';

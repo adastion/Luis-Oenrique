@@ -1,9 +1,6 @@
 .portfolio {
   background: $wild_sand;
 
-  &__title {
-  }
-
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -18,10 +15,6 @@
 
       &:hover {
         box-shadow: 1px 0px 18px 14px rgb(0 0 0 / 10%);
-      }
-
-      &:active {
-        
       }
     }
 

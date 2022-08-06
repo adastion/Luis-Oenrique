@@ -1,5 +1,4 @@
 .social {
-  
   @include big-tablet-and-bigger {
     position: absolute;
     top: 50%;
@@ -28,7 +27,7 @@
           fill: $white;
         }
       }
-      
+
       &:active {
         background: $alto;
 
